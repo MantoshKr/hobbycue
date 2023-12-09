@@ -35,3 +35,13 @@
     vertical-align: middle;
     padding-bottom: 4px;
 }
+
+.field-icon {
+    float: right;
+    margin-left: -40px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    color: #7b7f82;
+    width: 0.5px;
+  }

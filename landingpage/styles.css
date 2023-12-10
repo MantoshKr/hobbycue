@@ -121,8 +121,7 @@
   a {
     text-decoration: none;
   }
-  
-  /* Creating mobile view first Step 1 min-max is so they dont stretch when screen gets to 300px*/
+
   .wrapper-grid {
     display: grid;
     grid-template-columns: minmax(300px, 1fr);
@@ -132,8 +131,7 @@
     width:900px;
    
   }
-  
-  /* Step 2  pos rel is in case you want to add a image inside the container*/
+
   .listing-container {
     box-shadow: 0px 1px 4px 0px var(--light-gray-clr);
     border-radius: 1rem;

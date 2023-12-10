@@ -103,3 +103,159 @@
 
 
 
+
+/* add your listing part  */
+
+:root {
+  
+    --light-gray-clr: #b0bec5;
+  }
+  
+
+  
+  body {
+    color: var(--gray-clr);
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Creating mobile view first Step 1 min-max is so they dont stretch when screen gets to 300px*/
+  .wrapper-grid {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+    width:900px;
+   
+  }
+  
+  /* Step 2  pos rel is in case you want to add a image inside the container*/
+  .listing-container {
+    box-shadow: 0px 1px 4px 0px var(--light-gray-clr);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .listing-container:nth-child(1){
+    border: 2px solid #8064A2;
+  }
+
+  .listing-container:nth-child(2){
+    border: 2px solid #77933C;
+  }
+
+  .listing-container:nth-child(3){
+    border: 2px solid #C0504D;
+  }
+
+  .listing-container:nth-child(4){
+    border: 2px solid #0096C8 ;
+  }
+
+  .card1:hover {
+    background-color: #8064A2  ;
+    cursor:pointer;
+  }
+
+  .card2:hover {
+    background-color: #77933C  ;
+    cursor:pointer;
+  }
+
+  .card3:hover {
+    background-color: #C0504D  ;
+    cursor:pointer;
+  }
+
+  .card4:hover {
+    background-color: #0096C8  ;
+    cursor:pointer;
+  }
+
+  .card-body:hover .card-title,
+  .card-body:hover .card-text{
+    color: white ;
+  }
+
+  .card-body:hover .listingicon{
+    color:white !important;
+  }
+
+  .custom-btn1 {
+    color: #8064A2 !important;
+    background-color: white !important;
+    padding: 5px 28px !important;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    border-radius: 10px !important;
+    border: 2px solid #a088c4 !important;
+}
+
+.custom-btn1:hover {
+    background-color: #f8f7fa !important;
+    color: #8064A2 !important;
+    border-color: #58436E !important;
+}
+
+.custom-btn2 {
+    color: #77933C !important;
+    background-color: white !important;
+    padding: 5px 28px !important;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    border-radius: 10px !important;
+    border: 2px solid #77933C !important;
+}
+
+.custom-btn2:hover {
+    background-color: #f8f7fa !important;
+    color: #77933C !important;
+    border-color: #77933C !important;
+}
+  
+
+.custom-btn3 {
+    color: #C0504D !important;
+    background-color: white !important;
+    padding: 5px 35px !important;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    border-radius: 10px !important;
+    border: 2px solid #C0504D !important;
+}
+
+.custom-btn3:hover {
+    background-color: #f8f7fa !important;
+    color: #C0504D !important;
+    border-color: #C0504D !important;
+}
+
+
+.custom-btn4 {
+    color: #0096C8 !important;
+    background-color: white !important;
+    padding: 5px 35px !important;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    border-radius: 10px !important;
+    border: 2px solid #0096C8 !important;
+}
+
+.custom-btn4:hover {
+    background-color: #f8f7fa !important;
+    color: #0096C8 !important;
+    border-color: #0096C8 !important;
+}
+  
+  /* Media Quieries to make it  */
+  @media screen and (min-width: 993px) {
+    .wrapper-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+

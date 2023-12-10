@@ -18,7 +18,7 @@
     color: #535a60;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 70px;
 }
 
 .google-login {
@@ -248,6 +248,22 @@
     background-color: #f8f7fa !important;
     color: #0096C8 !important;
     border-color: #0096C8 !important;
+}
+
+.custom-btn5 {
+    color: #8064A2 !important;
+    background-color: white !important;
+    padding: 5px 28px !important;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    border-radius: 10px !important;
+    border: 2px solid #a088c4 !important;
+}
+
+.custom-btn5:hover {
+    background-color: #f8f7fa !important;
+    color: #8064A2 !important;
+    border-color: #58436E !important;
 }
   
   /* Media Quieries to make it  */

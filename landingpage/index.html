@@ -35,11 +35,11 @@
 
 
 
-    <div class="d-md-flex justify-content-md-center mt-5 bg-light">
+    <div class="d-md-flex justify-content-md-center mt-5 bg-light mx-lg-auto">
         <div class="d-flex pt-5 justify-content-center">
             <div class="p-5 responsive-width">
                 <h4 class="d-flex flex-md-row text-lg ">Explore <p class="ml-2"> your</p>
-                    <p class="text-primary mx-2">hobby</p> or <p class="text-indigo mx-2">passion</p>
+                    <p class="text-primary mx-2">hobby</p> or <p class="text-danger mx-2">passion</p>
                 </h4>
                 <p class="text-muted">Sign-in to interact with a community of fellow hobbyists and an eco-system of
                     experts, teachers, suppliers, classes, workshops, and places to practice, participate or perform.
@@ -48,17 +48,32 @@
                 <p class="text-muted"> If you are an expert or a seller, you can Add your Listing and promote yourself,
                     your students,
                     products, services or events. Hop on your hobbyhorse and enjoy the ride.</p>
-                <div class="d-flex justify-content-center align-items-center ">
-                    <img src="/landingpage/Images/signinimg1.png" style="width: 200px; max-width: 100%;"
-                        class="responsive-img md-img sm-img" alt="signinimg1" />
-                    <img src="/landingpage/Images/signinimg2.png" style="width: 200px;" alt="signinimg2" />
+                <div class="d-flex justify-content-center align-items-center mx-3">
+                    <img src="/landingpage/Images/signinimg1.png" style="width: 12rem;" alt="signinimg1" />
+                    <img src="/landingpage/Images/signinimg2.png" style="width: 12rem;" alt="signinimg2" />
                 </div>
             </div>
         </div>
+
         <div class="d-flex justify-content-center">
-            <form class="p-5 " style="width: 400px;">
+            <form class="px-3 " style="width: 400px;">
+
+                <div id="tabParent" class="maintabcontent">
+
+                    <!-- <div class="tab-bar">
+                        <button title="Tab 1" type="button" id="loginButton" class="tab tab--active">Sign In</button>
+                        <button title="Tab 2" type="button" id="signupButton" class="tab">Join In</button>
 
 
+                        <div class="tab-underline"></div>
+                    </div> -->
+                </div>
+
+                <div class="content-holder"><span id="content"></span></div>
+
+
+
+                <div class="content-holder"><span id="content"></span></div>
 
                 <div class="auth-provider google-login">
                     <svg aria-hidden="true" class="svg-icon ml-3" width="20" height="20" viewBox="0 0 18 18">
@@ -107,23 +122,57 @@
 
                     <input type="password" class="form-control border password-input" id="exampleInputPassword1"
                         placeholder="Password">
+
                     <span toggle="#password-field" class="fa fa-fw fa-eye field-icon" style="width: 1px;"></span>
+
+
                 </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <div class="d-flex justify-content-between">
-                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                        <label><span><i class="fa fa-lock text-black-50 mr-2" aria-hidden="true"></i></span><span>Forgot
-                                Password</span></label>
+
+
+                <!-- <div class="d-flex justify-content-between">
+                    <span>&nbsp;</span>
+                    <small >Password strength</small>
+                </div> -->
+
+
+                <div>
+
+                </div>
+
+                <!-- login part  -->
+                <div id="loginSection" class="content-holder open-ids">
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <div class="d-flex justify-content-between">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            <label><span><i class="fa fa-lock text-black-50 mr-2" aria-hidden="true"></i></span><span
+                                    class="">Forgot
+                                    Password</span></label>
+                        </div>
                     </div>
+                    <button type="submit" class="btn btn-md btn-block border"
+                        style="background-color: white; color: black ;">Submit</button>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+
+
+                <!-- signup part  -->
+                <div id="signupSection" class="content-holder open-ids">
+                  
+                    <small>
+                        By continuing, you agree to our <span>Terms of Service</span> and <span>Privacy Policy</span>
+                    </small>
+                    <button type="button" class="btn btn-md btn-block mt-2 rounded-1"
+                        style="background-color: #8064A2; color: white;">Agree and Continue</button>
+                </div>
+           
+
             </form>
         </div>
     </div>
 
 
     <script src="https://kit.fontawesome.com/0f0c2195a2.js" crossorigin="anonymous"></script>
+    <script src="/landingpage/index.js"></script>
 
 </body>
 

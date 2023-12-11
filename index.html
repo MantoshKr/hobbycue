@@ -19,9 +19,6 @@
 </head>
 
 <body>
-
-
-
     <!-- Navbar  -->
     <div class=" d-lg-flex align-items-center justify-content-center">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -33,7 +30,7 @@
 
 
 
-                <form class="d-md-flex d-none">
+                <form class="d-md-flex d-none mr-5">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn" type="submit"
                         style=" background-color: #8064A2; border: #8064A2; border: 1px solid #8064A2 ;">
@@ -43,18 +40,20 @@
 
 
                 <!-- small screen -->
-                <div class="d-flex" style="margin-left: 110px;">
-                    <button class="btn d-md-none d-flex mr-3" type="submit" style="background-color: white;">
-                        <i class="fa fa-search fa-lg" aria-hidden="true" style="color:#8064A2;"></i>
-                    </button>
-                    <li class=" d-md-none d-flex align-items-center">
-                        <i class="fa fa-bell fa-lg" style="color: #8064A2;" aria-hidden="true"></i>
-                    </li>
-                </div>
+
+                <button class="btn d-md-none d-flex mr-3" type="submit" style="background-color: white;">
+                    <i class="fa fa-search fa-lg" aria-hidden="true" style="color:#8064A2;"></i>
+                </button>
+                <li class=" d-md-none d-flex align-items-center">
+                    <i class="fa fa-bell fa-lg" style="color: #8064A2; cursor: pointer;" aria-hidden="true"></i>
+                </li>
+
+
+                <!--  -->
 
 
 
-
+                <!-- navbar toggle -->
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -63,17 +62,13 @@
                 </button>
 
 
-
-
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
+                        <!-- dropdown explore -->
 
-                        <li class="nav-item dropdown mr-3">
+                        <li class="nav-item dropdown mr-3 mt-1">
                             <div class="d-flex align-items-center">
 
                                 <img src="/Images/Explore.png" />
@@ -108,7 +103,10 @@
                         </li>
 
 
-                        <li class="nav-item dropdown  ">
+                        <!-- dropdown hobbies -->
+
+
+                        <li class="nav-item dropdown mt-1 ">
                             <div class="d-flex align-items-center  mr-5">
 
                                 <img src="/Images/hobbies.png" style="width: 25px;" />
@@ -142,15 +140,16 @@
                         </li>
 
                         <li class="d-flex align-items-center mx-2 mt-3 mb-4">
-                            <i class="fa fa-bookmark  " style="color: #8064A2;" aria-hidden="true"></i>
+                            <i class="fa fa-bookmark  " style="color: #8064A2; cursor: pointer;" aria-hidden="true"></i>
                         </li>
 
                         <li class=" align-items-center mx-2 mt-3 mb-4 d-md-flex d-none">
-                            <i class="fa fa-bell  " style="color: #8064A2;" aria-hidden="true"></i>
+                            <i class="fa fa-bell  " style="color: #8064A2; cursor: pointer;" aria-hidden="true"></i>
                         </li>
 
                         <li class="d-flex align-items-center mx-2 mt-3 mb-4">
-                            <i class="fa fa-shopping-cart  " style="color: #8064A2;" aria-hidden="true"></i>
+                            <i class="fa fa-shopping-cart  " style="color: #8064A2;cursor: pointer;"
+                                aria-hidden="true"></i>
                         </li>
 
                         <li>
@@ -158,11 +157,11 @@
                                 data-target="#exampleModalCenter">
                                 Sign In
                             </button>
-                           
-                            
+
+
                         </li>
- 
-                       
+
+
 
                     </ul>
 
@@ -176,103 +175,95 @@
     <!-- Modal -->
 
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Sign In</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-
-                <a class="auth-provider google-login d-flex "
-                    href="/userpage.html">
-                    <svg aria-hidden="true" class="svg-icon ml-3" width="20" height="20"
-                        viewBox="0 0 18 18">
-                        <g>
-                            <path
-                                d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18z"
-                                fill="#4285F4"></path>
-                            <path
-                                d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 0 1-7.18-2.54H1.83v2.07A8 8 0 0 0 8.98 17z"
-                                fill="#34A853"></path>
-                            <path
-                                d="M4.5 10.52a4.8 4.8 0 0 1 0-3.04V5.41H1.83a8 8 0 0 0 0 7.18l2.67-2.07z"
-                                fill="#FBBC05">
-                            </path>
-                            <path
-                                d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 1.83 5.4L4.5 7.49a4.77 4.77 0 0 1 4.48-3.3z"
-                                fill="#EA4335"></path>
-                        </g>
-                    </svg>
-                    Continue with Google
-                </a>
-
-
-
-                <a class="auth-provider facebook-login d-flex"
-                    href="/userpage.html">
-                    <svg aria-hidden="true" class="svg-icon ml-3" width="20" height="20"
-                        viewBox="0 0 18 18">
-                        <path
-                            d="M1.88 1C1.4 1 1 1.4 1 1.88v14.24c0 .48.4.88.88.88h7.67v-6.2H7.46V8.4h2.09V6.61c0-2.07 1.26-3.2 3.1-3.2.88 0 1.64.07 1.87.1v2.16h-1.29c-1 0-1.19.48-1.19 1.18V8.4h2.39l-.31 2.42h-2.08V17h4.08c.48 0 .88-.4.88-.88V1.88c0-.48-.4-.88-.88-.88H1.88z"
-                            fill="#395697"></path>
-                    </svg>
-                    Continue with Facebook
-                </a>
-
-                <div class=" align-items-center mb-3 d-flex">
-                    <hr class="flex-grow-1">
-                    <span class="mx-2 small text-black-50 font-weight-bold">or connect
-                        with</span>
-                    <hr class="flex-grow-1">
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="modal-body">
 
-                <div class="form-group row px-2 d-flex ">
+                    <a class="auth-provider google-login d-flex " href="/userpage.html">
+                        <svg aria-hidden="true" class="svg-icon ml-3" width="20" height="20" viewBox="0 0 18 18">
+                            <g>
+                                <path
+                                    d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18z"
+                                    fill="#4285F4"></path>
+                                <path
+                                    d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 0 1-7.18-2.54H1.83v2.07A8 8 0 0 0 8.98 17z"
+                                    fill="#34A853"></path>
+                                <path d="M4.5 10.52a4.8 4.8 0 0 1 0-3.04V5.41H1.83a8 8 0 0 0 0 7.18l2.67-2.07z"
+                                    fill="#FBBC05">
+                                </path>
+                                <path
+                                    d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 1.83 5.4L4.5 7.49a4.77 4.77 0 0 1 4.48-3.3z"
+                                    fill="#EA4335"></path>
+                            </g>
+                        </svg>
+                        Continue with Google
+                    </a>
 
-                    <input type="email" class="form-control border " id="exampleInputEmail1"
-                        aria-describedby="emailHelp" placeholder="Email">
-
-                </div>
-                <div class="form-group row px-2 d-flex">
-
-                    <input type="password" class="form-control border password-input"
-                        id="exampleInputPassword1" placeholder="Password">
-
-                    <span toggle="#password-field" class="fa fa-eye-slash field-icon"
-                        style="width: 1px;"></span>
 
 
-                </div>
+                    <a class="auth-provider facebook-login d-flex" href="/userpage.html">
+                        <svg aria-hidden="true" class="svg-icon ml-3" width="20" height="20" viewBox="0 0 18 18">
+                            <path
+                                d="M1.88 1C1.4 1 1 1.4 1 1.88v14.24c0 .48.4.88.88.88h7.67v-6.2H7.46V8.4h2.09V6.61c0-2.07 1.26-3.2 3.1-3.2.88 0 1.64.07 1.87.1v2.16h-1.29c-1 0-1.19.48-1.19 1.18V8.4h2.39l-.31 2.42h-2.08V17h4.08c.48 0 .88-.4.88-.88V1.88c0-.48-.4-.88-.88-.88H1.88z"
+                                fill="#395697"></path>
+                        </svg>
+                        Continue with Facebook
+                    </a>
 
-                <!-- login part  -->
-                <div id="loginSection1" class="content-holder">
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <div class="d-flex justify-content-between">
-                            <label class="form-check-label small"
-                                for="exampleCheck1">Remember me</label>
-                            <label><span><i class="fa fa-lock text-black-50 mr-2 small"
-                                        aria-hidden="true"></i></span><span
-                                    class="small">Forgot
-                                    Password ?</span></label>
-                        </div>
+                    <div class=" align-items-center mb-3 d-flex">
+                        <hr class="flex-grow-1">
+                        <span class="mx-2 small text-black-50 font-weight-bold">or connect
+                            with</span>
+                        <hr class="flex-grow-1">
                     </div>
-                    <button type="submit" class="btn btn-md btn-block border "
-                        style="background-color: white; color: black ;">Submit</button>
+
+                    <div class="form-group row px-2 d-flex ">
+
+                        <input type="email" class="form-control border " id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Email">
+
+                    </div>
+                    <div class="form-group row px-2 d-flex">
+
+                        <input type="password" class="form-control border password-input" id="exampleInputPassword1"
+                            placeholder="Password">
+
+                        <span toggle="#password-field" class="fa fa-eye-slash field-icon" style="width: 1px;"></span>
+
+
+                    </div>
+
+                    <!-- login part  -->
+                    <div id="loginSection1" class="content-holder">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <div class="d-flex justify-content-between">
+                                <label class="form-check-label small" for="exampleCheck1">Remember me</label>
+                                <label><span><i class="fa fa-lock text-black-50 mr-2 small"
+                                            aria-hidden="true"></i></span><span class="small">Forgot
+                                        Password ?</span></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-md btn-block border "
+                            style="background-color: white; color: black ;">Submit</button>
+                    </div>
+
                 </div>
 
             </div>
-          
         </div>
     </div>
-</div>
 
     <!-- explore , login and signup -->
 
-    <div class="d-md-flex justify-content-md-center mt-2 mx-lg-auto">
+    <div class="d-md-flex justify-content-md-center mt-2 mx-lg-auto ">
         <div class="pt-5 justify-content-center  d-md-flex d-none" style="background-color: #F7F5F9;">
             <div class="px-5 responsive-width">
                 <h4 class="d-flex flex-md-row text-lg" style="font-style: oblique; color:black ;">Explore <p
@@ -295,6 +286,8 @@
         </div>
 
 
+
+        <!-- small screen -- expore your hobby-->
         <div class="pt-5 justify-content-center d-md-none d-flex" style="background-color: #F7F5F9;">
             <div class="px-5 responsive-width">
                 <h4 class="d-flex flex-md-row text-lg " style="font-style: oblique; color:black ;">Explore <p
@@ -327,6 +320,8 @@
                    
                 </div> -->
 
+                <!-- small screen sign in options  -->
+
                 <div class="form-group row px-2 d-md-none d-flex
                 ">
 
@@ -344,17 +339,6 @@
 
 
                 </div>
-
-
-
-
-
-
-                <div class="content-holder"><span id="content"></span></div>
-
-
-
-                <div class="content-holder"><span id="content"></span></div>
 
                 <a class="auth-provider google-login d-md-flex d-none" href="/userpage.html">
                     <svg aria-hidden="true" class="svg-icon ml-3" width="20" height="20" viewBox="0 0 18 18">
@@ -611,7 +595,7 @@
     <!-- Testimonials -->
 
     <div class="d-flex justify-content-center">
-        <div class="card m-5" style="width: 900px; cursor: pointer;">
+        <div class="card m-lg-5 m-4" style="width: 900px; cursor: pointer;">
 
             <div class="card-body card7">
                 <div class="d-flex align-items-center">
@@ -681,7 +665,8 @@
                         Community...</p>
                 </h4>
 
-                <a href="#" type="button" class="btn" style="color:white; background-color: #8064A2;"> Get
+                <a href="#" type="button" class="btn" data-toggle="modal"
+                data-target="#exampleModalCenter" style="color:white; background-color: #8064A2;"> Get
                     started </a>
                 <img src="/Images/getstarted.PNG" alt="getstarted" class="img-fluid mt-5" />
             </div>
@@ -828,8 +813,12 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
 
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
 
         <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
         <script>

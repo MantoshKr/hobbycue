@@ -155,6 +155,15 @@
     border: 2px solid #0096C8 ;
   }
 
+  .card6{
+    border:2px solid #0096C8 ;
+    border-radius: 1rem;
+  }
+
+  .card7{
+    border:2px solid #8064A2 ;
+    border-radius: 1rem;
+  }
   .card1:hover {
     background-color: #8064A2  ;
     cursor:pointer;
@@ -174,6 +183,16 @@
     background-color: #0096C8  ;
     cursor:pointer;
   }
+
+  .card6:hover{
+    background-color:#0096C8;
+  }
+
+
+  .card7:hover{
+    background-color:#8064A2;
+  }
+
 
   .card-body:hover .card-title,
   .card-body:hover .card-text{
@@ -264,6 +283,22 @@
     background-color: #f8f7fa !important;
     color: #8064A2 !important;
     border-color: #58436E !important;
+}
+
+.custom-btn6 {
+  color: #0096C8 !important;
+  background-color: white !important;
+  padding: 5px 28px !important;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  border-radius: 10px !important;
+  border: 2px solid #0096C8 !important;
+}
+
+.custom-btn6:hover {
+  background-color: #f8f7fa !important;
+  color: #0096C8 !important;
+  border-color: #0096C8 !important;
 }
   
   /* Media Quieries to make it  */

@@ -45,9 +45,7 @@
                     <img src="/landingpage/Images/hobbycuelogo2.png" class="d-xl-flex d-none" style="width: 150px;" />
                 </a>
 
-                <button class="btn d-md-none d-flex flex-start" type="submit" style="background-color: white;">
-                    <i class="fa fa-search fa-lg" aria-hidden="true" style="color:#8064A2;"></i>
-                </button>
+
 
                 <form class="d-md-flex d-none">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -58,17 +56,18 @@
                 </form>
 
 
-                <li class="d-lg-none d-flex align-items-center">
-                    <i class="fa fa-bookmark " style="color: #8064A2;" aria-hidden="true"></i>
-                </li>
-
-                <li class=" d-lg-none d-flex align-items-center ">
+                <!-- small screen -->
+                   <div class="d-flex" style="margin-left: 140px;">
+                <button class="btn d-md-none d-flex mr-3" type="submit" style="background-color: white;">
+                    <i class="fa fa-search fa-lg" aria-hidden="true" style="color:#8064A2;"></i>
+                </button>
+                <li class=" d-md-none d-flex align-items-center ">
                     <i class="fa fa-bell fa-lg" style="color: #8064A2;" aria-hidden="true"></i>
                 </li>
+            </div>
 
-                <li class="d-lg-none d-flex align-items-center">
-                    <i class="fa fa-shopping-cart " style="color: #8064A2;" aria-hidden="true"></i>
-                </li>
+
+
 
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -89,7 +88,7 @@
 
 
                         <li class="nav-item dropdown mx-3">
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center ">
                                 <img src="/landingpage/Images/Explore.png" />
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -121,7 +120,7 @@
 
 
                         <li class="nav-item dropdown mx-3 ">
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center ">
                                 <img src="/landingpage/Images/hobbies.png" style="width: 25px;" />
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -151,21 +150,21 @@
                             </div>
                         </li>
 
-                        <li class="d-flex align-items-center">
-                            <i class="fa fa-bookmark " style="color: #8064A2;" aria-hidden="true"></i>
+                        <li class="d-flex align-items-center m-3 mb-4">
+                            <i class="fa fa-bookmark fa-lg " style="color: #8064A2;" aria-hidden="true"></i>
                         </li>
 
-                        <li class="d-flex align-items-center mx-5">
-                            <i class="fa fa-bell fa-lg" style="color: #8064A2;" aria-hidden="true"></i>
+                        <li class=" align-items-center m-3 mb-4 d-md-flex d-none">
+                            <i class="fa fa-bell fa-lg " style="color: #8064A2;" aria-hidden="true"></i>
                         </li>
 
-                        <li class="d-flex align-items-center">
-                            <i class="fa fa-shopping-cart " style="color: #8064A2;" aria-hidden="true"></i>
+                        <li class="d-flex align-items-center m-3 mb-4">
+                            <i class="fa fa-shopping-cart fa-lg " style="color: #8064A2;" aria-hidden="true"></i>
                         </li>
 
                         <li>
-                            <a href="#" type="button" class="btn custom-btn5 ml-5 ">
-                                Connect
+                            <a href="#" type="button" class="btn custom-btn5 mt-1 ml-3 ">
+                                Sign In
                             </a>
                         </li>
 
@@ -182,10 +181,10 @@
 
     <!-- explore , login and signup -->
 
-    <div class="d-md-flex justify-content-md-center mt-5 mx-lg-auto">
-        <div class="d-flex pt-5 justify-content-center" style="background-color: #F7F5F9;">
-            <div class="p-5 responsive-width">
-                <h4 class="d-flex flex-md-row text-lg " style="font-style: oblique; color:black ;">Explore <p
+    <div class="d-md-flex justify-content-md-center mt-2 mx-lg-auto">
+        <div class="pt-5 justify-content-center  d-md-flex d-none" style="background-color: #F7F5F9;">
+            <div class="px-5 responsive-width">
+                <h4 class="d-flex flex-md-row text-lg" style="font-style: oblique; color:black ;">Explore <p
                         class="ml-2"> your</p>
                     <p class="text-primary mx-2">hobby</p> or <p class=" mx-2" style="color:#8064A2 ;">passion</p>
                 </h4>
@@ -200,7 +199,21 @@
                     <img src="/landingpage/Images/signinimg1.png" style="width: 12rem;" alt="signinimg1" />
                     <img src="/landingpage/Images/signinimg2.png" style="width: 12rem;" alt="signinimg2" />
                 </div> -->
-                <img src="/landingpage/Images/startpageimg.PNG" alt="startpageimg" class="img-fluid" />
+                <img src="/landingpage/Images/startpageimg.PNG" alt="startpageimg" class="img-fluid d-md-flex d-none" />
+            </div>
+        </div>
+
+
+        <div class="pt-5 justify-content-center d-md-none d-flex" style="background-color: #F7F5F9;">
+            <div class="px-5 responsive-width">
+                <h4 class="d-flex flex-md-row text-lg " style="font-style: oblique; color:black ;">Explore <p
+                        class="ml-2"> your</p>
+                    <p class="text-primary mx-2">hobby</p> or <p class=" mx-2" style="color:#8064A2 ;">passion</p>
+                </h4>
+                <p class="text-muted">Sign-in to interact with a community of fellow hobbyists and an eco-system of
+                    experts, teachers, suppliers, classes, workshops, and places to practice, participate or perform.
+                </p>
+
             </div>
         </div>
 
@@ -218,13 +231,41 @@
                     </div> -->
                 </div>
 
-                <div class="content-holder"><span id="content"></span></div>
+                <!-- <div id="tabParentsmall" class="maintabcontentsmall mb-4">
+
+                   
+                </div> -->
+
+                <div class="form-group row px-2 d-md-none d-flex
+                ">
+
+                    <input type="email" class="form-control border " id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Email">
+
+                </div>
+                <div class="form-group row px-2 d-md-none d-flex
+                ">
+
+                    <input type="password" class="form-control border password-input" id="exampleInputPassword1"
+                        placeholder="Password">
+
+                    <span toggle="#password-field" class="fa fa-eye-slash field-icon" style="width: 1px;"></span>
+
+
+                </div>
+
+
+
 
 
 
                 <div class="content-holder"><span id="content"></span></div>
 
-                <div class="auth-provider google-login">
+
+
+                <div class="content-holder"><span id="content"></span></div>
+
+                <div class="auth-provider google-login d-md-flex d-none">
                     <svg aria-hidden="true" class="svg-icon ml-3" width="20" height="20" viewBox="0 0 18 18">
                         <g>
                             <path
@@ -246,7 +287,7 @@
 
 
 
-                <div class="auth-provider facebook-login">
+                <div class="auth-provider facebook-login d-md-flex d-none">
                     <svg aria-hidden="true" class="svg-icon ml-3" width="20" height="20" viewBox="0 0 18 18">
                         <path
                             d="M1.88 1C1.4 1 1 1.4 1 1.88v14.24c0 .48.4.88.88.88h7.67v-6.2H7.46V8.4h2.09V6.61c0-2.07 1.26-3.2 3.1-3.2.88 0 1.64.07 1.87.1v2.16h-1.29c-1 0-1.19.48-1.19 1.18V8.4h2.39l-.31 2.42h-2.08V17h4.08c.48 0 .88-.4.88-.88V1.88c0-.48-.4-.88-.88-.88H1.88z"
@@ -255,19 +296,25 @@
                     Continue with Facebook
                 </div>
 
-                <div class="d-flex align-items-center mb-3">
+
+
+
+
+
+
+                <div class=" align-items-center mb-3 d-md-flex d-none">
                     <hr class="flex-grow-1">
-                    <span class="mx-2 text-muted">or connect with</span>
+                    <span class="mx-2 small text-black-50 font-weight-bold">or connect with</span>
                     <hr class="flex-grow-1">
                 </div>
 
-                <div class="form-group row px-2">
+                <div class="form-group row px-2 d-md-flex d-none">
 
                     <input type="email" class="form-control border " id="exampleInputEmail1"
                         aria-describedby="emailHelp" placeholder="Email">
 
                 </div>
-                <div class="form-group row px-2">
+                <div class="form-group row px-2 d-md-flex d-none">
 
                     <input type="password" class="form-control border password-input" id="exampleInputPassword1"
                         placeholder="Password">
@@ -293,25 +340,24 @@
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <div class="d-flex justify-content-between">
-                            <label class="form-check-label text-black-50" for="exampleCheck1">Remember me</label>
-                            <label><span><i class="fa fa-lock text-black-50 mr-2" aria-hidden="true"></i></span><span
-                                    class="text-primary">Forgot
-                                    Password</span></label>
+                            <label class="form-check-label small" for="exampleCheck1">Remember me</label>
+                            <label><span><i class="fa fa-lock text-black-50 mr-2 small"
+                                        aria-hidden="true"></i></span><span class="small">Forgot
+                                    Password ?</span></label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-md btn-block border"
+                    <button type="submit" class="btn btn-md btn-block border "
                         style="background-color: white; color: black ;">Submit</button>
                 </div>
 
 
                 <!-- signup part  -->
-                <div id="signupSection" class="content-holder open-ids">
+                <div id="signupSection" class="content-holder open-ids ">
 
                     <small class="text-dark">
                         <div class="form-check">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue"
-                                    checked>
+                                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
                                 By continuing, you agree to our <span>Terms of Service</span> and <span>Privacy
                                     Policy</span>
                             </label>
@@ -321,6 +367,55 @@
                     <button type="button" class="btn btn-md btn-block mt-2 rounded-1"
                         style="background-color: #8064A2; color: white;">Agree and Continue</button>
                 </div>
+
+
+                <div class=" align-items-center mb-3 d-md-none d-flex mt-3 ">
+                    <hr class="flex-grow-1">
+                    <span class="mx-2 text-muted">or connect with</span>
+                    <hr class="flex-grow-1">
+                </div>
+
+                <div class="content-holder"><span id="content"></span></div>
+
+
+
+                <div class="content-holder"><span id="content"></span></div>
+
+                <div class="auth-provider google-login d-md-none d-flex">
+                    <svg aria-hidden="true" class="svg-icon ml-3" width="20" height="20" viewBox="0 0 18 18">
+                        <g>
+                            <path
+                                d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18z"
+                                fill="#4285F4"></path>
+                            <path
+                                d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 0 1-7.18-2.54H1.83v2.07A8 8 0 0 0 8.98 17z"
+                                fill="#34A853"></path>
+                            <path d="M4.5 10.52a4.8 4.8 0 0 1 0-3.04V5.41H1.83a8 8 0 0 0 0 7.18l2.67-2.07z"
+                                fill="#FBBC05">
+                            </path>
+                            <path
+                                d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 1.83 5.4L4.5 7.49a4.77 4.77 0 0 1 4.48-3.3z"
+                                fill="#EA4335"></path>
+                        </g>
+                    </svg>
+                    Continue with Google
+                </div>
+
+
+
+                <div class="auth-provider facebook-login d-md-none d-flex">
+                    <svg aria-hidden="true" class="svg-icon ml-3" width="20" height="20" viewBox="0 0 18 18">
+                        <path
+                            d="M1.88 1C1.4 1 1 1.4 1 1.88v14.24c0 .48.4.88.88.88h7.67v-6.2H7.46V8.4h2.09V6.61c0-2.07 1.26-3.2 3.1-3.2.88 0 1.64.07 1.87.1v2.16h-1.29c-1 0-1.19.48-1.19 1.18V8.4h2.39l-.31 2.42h-2.08V17h4.08c.48 0 .88-.4.88-.88V1.88c0-.48-.4-.88-.88-.88H1.88z"
+                            fill="#395697"></path>
+                    </svg>
+                    Continue with Facebook
+                </div>
+
+
+
+                <img src="/landingpage/Images/startpageimg.PNG" alt="startpageimg"
+                    class="img-fluid  d-md-none d-flex" />
 
 
             </form>
@@ -408,7 +503,7 @@
     <!--add your own  -->
 
     <div class="d-flex justify-content-center">
-        <div class="card m-5" style="width: 900px; cursor: pointer;">
+        <div class="card m-5 border-0" style="width: 900px; cursor: pointer;">
 
             <div class="card-body card6">
                 <div class="d-flex align-items-center">
@@ -432,8 +527,7 @@
 
             <div class="card-body card7">
                 <div class="d-flex align-items-center">
-                    <i class="fa fa-quote-left fa-xl listingicon pb-2" aria-hidden="true"
-                        style="color:#8064A2; background-color: #F7F5F9;"></i>
+                    <i class="fa fa-quote-left fa-xl listingicon pb-2" aria-hidden="true" style="color:#8064A2;"></i>
                     <h5 class="card-title ml-2">Testimonials</h5>
                 </div>
                 <p class="card-text">In a fast growing and ever changing city like Bangalore, it sometimes becomes very
@@ -443,9 +537,39 @@
                     assured is going to be of great quality as it comes recommended by people of the hobbycue community.
                     To have discussions, to get visibility, and to be able to safely explore various hobbies and
                     activities in my city, all under one roof, is an excellent idea and I highly recommend it.</p>
-                <a href="#" type="button" class="btn custom-btn1 mb-3 font-weight-bold">
-                    Add New
-                </a>
+                <div class="d-lg-flex align-items-center justify-content-between">
+
+                    <!-- small screen -->
+                    <div class="d-md-none d-flex" style="width: 250px;">
+                        <img src="/landingpage/Images/audioimg.png" alt="audioimg" style="width: 80px; height: 80px;"
+                            class="mt-1 img-fluid " />
+                        <div class="d-flex flex-column align-items-center mt-4 ml-3">
+                            <p class="mb-0" style="color:#8064A2" class="font-weight-bold">Shubha Nagarajan</p>
+                            <p class="mt-0" style="color:#0096C8">Classical Dancer</p>
+
+                        </div>
+                    </div>
+
+                    <div class="mr-3 d-md-none d-flex">
+                        <img src="/landingpage/Images/audioimgsmall.PNG" alt="audio" class="audioimg img-fluid" />
+                    </div>
+
+
+                    <!-- large screens -->
+
+                    <div style="width: 550px;" class="mr-3 d-md-flex d-none">
+                        <img src="/landingpage/Images/audio.PNG" alt="audio" class="audioimg img-fluid" />
+                    </div>
+                    <div class="d-md-flex d-none" style="width: 250px;">
+                        <img src="/landingpage/Images/audioimg.png" alt="audioimg" style="width: 80px; height: 80px;"
+                            class="mt-1 img-fluid " />
+                        <div class="d-flex flex-column align-items-center mt-4 ml-3">
+                            <p class="mb-0" style="color:#8064A2" class="font-weight-bold">Shubha Nagarajan</p>
+                            <p class="mt-0" style="color:#0096C8">Classical Dancer</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -463,8 +587,8 @@
                         Community...</p>
                 </h4>
 
-                <a href="#" type="button" class="btn pt-1" style="color:white; background-color: #8064A2;">Get
-                    started</a>
+                <a href="#" type="button" class="btn" style="color:white; background-color: #8064A2;"> Get
+                    started </a>
                 <img src="/landingpage/Images/getstarted.PNG" alt="getstarted" class="img-fluid mt-5" />
             </div>
         </div>
@@ -484,10 +608,10 @@
 
                     <div class="col-lg-2 col-md-6 ml-lg-5 mr-xl-4">
                         <div class="d-flex justify-content-between">
-                        <h5 class="small font-weight-bold mb-3">Hobbycue</h5>
-                   
-                        <i class="fa fa-angle-up fa-sm d-flex d-md-none" aria-hidden="true"></i>
-                    </div>
+                            <h5 class="small font-weight-bold mb-3">Hobbycue</h5>
+
+                            <i class="fa fa-angle-up fa-sm d-flex d-md-none" aria-hidden="true"></i>
+                        </div>
                         <ul class="list-unstyled small ">
                             <li>
                                 <p class="m-1" style="cursor: pointer;" href="#">About Us</p>
@@ -510,7 +634,7 @@
                     <div class="col-lg-2 col-md-6 mr-xl-4">
                         <div class="d-flex justify-content-between">
                             <h5 class="small font-weight-bold mb-3">How Do I</h5>
-                       
+
                             <i class="fa fa-angle-up fa-sm d-flex d-md-none" aria-hidden="true"></i>
                         </div>
                         <ul class="list-unstyled small" style="color: black;">
@@ -537,7 +661,7 @@
                     <div class="col-lg-2 col-md-6 mr-xl-4">
                         <div class="d-flex justify-content-between">
                             <h5 class="small font-weight-bold mb-3">Quick links</h5>
-                       
+
                             <i class="fa fa-angle-up fa-sm d-flex d-md-none" aria-hidden="true"></i>
                         </div>
                         <ul class="list-unstyled small ">
@@ -589,20 +713,28 @@
 
     <div class="card">
         <div class="card-body" style="background-color: #F7F5F9;">
-        <div class="d-flex justify-content-center">
-            
-            © Purple Cues Private Limited
+            <div class="d-flex justify-content-center">
+
+                © Purple Cues Private Limited
+            </div>
+
         </div>
-       
-      </div>
 
 
 
-    <script src="https://kit.fontawesome.com/0f0c2195a2.js" crossorigin="anonymous"></script>
-    <script src="/landingpage/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/0f0c2195a2.js" crossorigin="anonymous"></script>
+        <script src="/landingpage/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const player = new Plyr('.custom-audio', {
+                    controls: ['play', 'progress', 'current-time', 'fullscreen'],
+                });
+            });
+        </script>
 
 </body>
 

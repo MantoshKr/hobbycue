@@ -301,6 +301,44 @@
   border-color: #0096C8 !important;
 }
   
+
+
+/* footer */
+
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.form-control {
+  background: #212529;
+  border-color: #545454;
+}
+
+.form-control:focus {
+  background: #212529;
+}
+
+footer {
+  background: #FFFFFF;
+}
+
+
+
+
+
+
+
   /* Media Quieries to make it  */
   @media screen and (min-width: 993px) {
     .wrapper-grid {
@@ -308,3 +346,33 @@
     }
   }
 
+  /* Small screens */
+  @media (max-width: 576px) {
+    .getstarted-text {
+        font-size: 1rem;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 577px) and (max-width: 768px) {
+    .getstarted-text {
+        font-size: 1.25rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 769px) and (max-width: 992px) {
+    .getstarted-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* Extra-large screens */
+@media (min-width: 993px) {
+    .getstarted-text {
+        font-size: 1.75rem;
+    }
+}
+
+
+  
